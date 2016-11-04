@@ -10,24 +10,30 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { HomeComponent } from './home/home.component';
-
+import { HeaderComponent } from './header/header.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { ScheduleModule } from './pages/schedule/schedule.module';
+// console.log(ScheduleModule);
 @NgModule({
     declarations: [AppComponent,
                    HelloComponent,
                    CalendarComponent,
-                   HomeComponent],
+                   HomeComponent,
+                   HeaderComponent,
+                   SideMenuComponent],
     imports: [BrowserModule,
               FormsModule,
               ReactiveFormsModule,
               HttpModule,
               AlertModule,
               DatepickerModule,
+              ScheduleModule,
               routing],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     providers: [
         appRouterProviders,
         [{provide: APP_BASE_HREF, useValue: '/'}],
-        [{provide: LocationStrategy, useClass: HashLocationStrategy}]
+        // [{provide: LocationStrategy, useClass: HashLocationStrategy}]
     ],
     bootstrap: [AppComponent]
 })

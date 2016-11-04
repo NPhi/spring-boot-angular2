@@ -1,16 +1,10 @@
-$bg-color: #5e35b1;
-$font-color: #ffffff;
-
 html {
-	margin: 0 auto;
-    background-color: $bg-color;
+    height: 100%;
 }
-
 body {
-    background-color: $bg-color;
-    color: $font-color;
+    min-height: 100%;
 }
-
-.nav {
-    width: auto;
+// make AdminLTE wrapper height 100% of parent
+.wrapper {
+    height: 100vh;
 }

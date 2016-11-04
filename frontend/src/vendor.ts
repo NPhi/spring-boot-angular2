@@ -8,9 +8,11 @@ import '@angular/http';
 import '@angular/router';
 
 import 'rxjs';
-import 'jquery';
 import 'bootstrap-loader';
 import 'font-awesome-sass-loader';
+import 'admin-lte';
+import 'admin-lte/plugins/jQueryUI/jquery-ui.min.js';
+import 'admin-lte/plugins/fullcalendar/fullcalendar.min.js';
 import 'lodash';
 
 if (ENV === 'production') {
